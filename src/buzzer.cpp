@@ -14,6 +14,7 @@
 #define NOTE_B4  494
 #define NOTE_B5  988
 
+//bloquant
 void play_tone(uint32_t freq, uint32_t duration_ms, ledc_channel_config_t *ledc_channel, ledc_timer_config_t *ledc_timer) {
   if (freq == 0) {
     // Si la note est un silence (0), on coupe le son (duty = 0)
